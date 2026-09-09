@@ -1,5 +1,7 @@
 # lsposed-xj-use
 
+> 禁止将本项目用于任何违法犯罪活动。
+
 独立、最小化的 Android arm64 LSPosed 模块模板，包含：
 
 - 使用经典 Xposed API Hook `android.util.Log.i(String, String)`。
