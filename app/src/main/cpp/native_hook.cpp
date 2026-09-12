@@ -1,84 +1,95 @@
 #include <dlfcn.h>
+#include <fcntl.h>
 #include <jni.h>
 #include <unistd.h>
 
-#include <atomic>
 #include <cstdio>
 #include <mutex>
+#include <string>
+
+#include <android/log.h>
 
 #include <dobby.h>
 
+#include "vendor/hide_utils.h"
+
 namespace {
 
-using GetPid = pid_t (*)();
+// int open(const char *pathname, int flags, ...)
+// 非 O_CREAT 调用不传第三参，x2 上的值内核会忽略，按三参直传即可。
+using OpenFn = int (*)(const char *, int, mode_t);
 
 std::mutex install_mutex;
-std::atomic<int> hook_hits{0};
-GetPid original_getpid = nullptr;
-bool install_attempted = false;
-bool install_succeeded = false;
+OpenFn original_open = nullptr;
 
-pid_t replacement_getpid() {
-    hook_hits.fetch_add(1, std::memory_order_relaxed);
-    return original_getpid != nullptr ? original_getpid() : -1;
+int replacement_open(const char *pathname, int flags, mode_t mode) {
+    __android_log_print(ANDROID_LOG_INFO, "XjUse", "open %s", pathname);
+    return original_open(pathname, flags, mode);
 }
 
-jstring make_result(JNIEnv *env, const char *text) {
-    return env->NewStringUTF(text);
+// DobbyXJ copy-page hook：解析 libc 的 open 安装 replacement。
+std::string installOpenHookLocked() {
+    std::lock_guard<std::mutex> lock(install_mutex);
+    void *target = DobbySymbolResolver("libc.so", "open");
+    if (target == nullptr) {
+        return "open export was not found";
+    }
+    int result = DobbyXjHook(
+            target,
+            reinterpret_cast<dobby_dummy_func_t>(replacement_open),
+            reinterpret_cast<dobby_dummy_func_t *>(&original_open));
+    if (result != RS_SUCCESS || original_open == nullptr) {
+        return "DobbyXjHook(open) failed";
+    }
+    return "DobbyXjHook(open) success";
+}
+
+void reportToJava(JNIEnv *env, const char *text) {
+    if (env == nullptr) {
+        return;
+    }
+    jclass bridge = env->FindClass("com/example/xjuse/NativeBridge");
+    if (bridge == nullptr) {
+        env->ExceptionClear();
+        return;
+    }
+    jfieldID field = env->GetStaticFieldID(
+            bridge, "nativeReport", "Ljava/lang/String;");
+    if (field == nullptr) {
+        env->ExceptionClear();
+        env->DeleteLocalRef(bridge);
+        return;
+    }
+    jstring value = env->NewStringUTF(text);
+    env->SetStaticObjectField(bridge, field, value);
+    env->DeleteLocalRef(value);
+    env->DeleteLocalRef(bridge);
 }
 
 }  // namespace
 
-extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_lsposedxjuse_NativeBridge_installNativeHook(
-        JNIEnv *env, jclass) {
-    std::lock_guard<std::mutex> lock(install_mutex);
-
-    if (install_attempted) {
-        return make_result(
-                env,
-                install_succeeded
-                        ? "DobbyXjHook is already installed"
-                        : "DobbyXjHook installation already failed");
+// JNI_OnLoad 完成：安装 DobbyXJ open hook → solistClear 自卸载 → 结果写回
+// NativeBridge.nativeReport。此后 Java 不再调用任何 native 方法
+// （soinfo 已卸载，再解析符号会失败），报告只经 Java 字段传递。
+// 如需临时禁用某项能力（例如定位加固应用崩溃），直接注释掉对应调用。
+extern "C" JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *) {
+    JNIEnv *env = nullptr;
+    if (vm->GetEnv(reinterpret_cast<void **>(&env), JNI_VERSION_1_6) != JNI_OK) {
+        return JNI_ERR;
     }
-    install_attempted = true;
 
+    std::string report;
     if (!DobbyXjIsAvailable()) {
-        return make_result(
-                env,
-                "DobbyXJ provider unavailable; check arm64 and kernel module authorization");
+        report = "DobbyXJ provider unavailable; check arm64 and kernel module authorization";
+    } else {
+        report = installOpenHookLocked();
     }
 
-    void *target = dlsym(RTLD_DEFAULT, "getpid");
-    if (target == nullptr) {
-        return make_result(env, "getpid export was not found");
-    }
+    // 以 JNI_OnLoad 自身地址定位本库 soinfo，不依赖名字。
+    solistClear(reinterpret_cast<uintptr_t>(&JNI_OnLoad));
+    report += "; solistClear(&JNI_OnLoad) executed";
 
-    int result = DobbyXjHook(
-            target,
-            reinterpret_cast<dobby_dummy_func_t>(replacement_getpid),
-            reinterpret_cast<dobby_dummy_func_t *>(&original_getpid));
-    if (result != RS_SUCCESS || original_getpid == nullptr) {
-        return make_result(env, "DobbyXjHook(getpid) failed");
-    }
-
-    auto hooked_getpid = reinterpret_cast<GetPid>(target);
-    pid_t observed_pid = hooked_getpid();
-    int observed_hits = hook_hits.load(std::memory_order_relaxed);
-    if (observed_pid <= 0 || observed_hits < 1) {
-        DobbyXjDestroy(target);
-        original_getpid = nullptr;
-        return make_result(env, "DobbyXjHook self-check failed");
-    }
-
-    install_succeeded = true;
-    char status[160];
-    std::snprintf(
-            status,
-            sizeof(status),
-            "DobbyXjHook installed; Dobby=%s, pid=%d, hits=%d",
-            DobbyGetVersion(),
-            observed_pid,
-            observed_hits);
-    return make_result(env, status);
+    reportToJava(env, report.c_str());
+    __android_log_print(ANDROID_LOG_INFO, "XjUse", "%s", report.c_str());
+    return JNI_VERSION_1_6;
 }

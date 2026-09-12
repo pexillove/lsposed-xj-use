@@ -3,7 +3,7 @@
     <application
         android:allowBackup="false"
         android:hasCode="true"
-        android:label="LSPosed XJ Use">
+        android:label="XJ Use">
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
@@ -15,6 +15,6 @@
             android:value="93" />
         <meta-data
             android:name="xposedscope"
-            android:resource="@array/xposed_scope" />
+            android:resource="@array/module_scope" />
     </application>
 </manifest>

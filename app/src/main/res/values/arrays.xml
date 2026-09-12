@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="xposed_scope">
-        <item>com.example.target</item>
+    <!-- 数组名不含 xposed 关键词；manifest 的 xposedscope meta-data 按
+         资源 ID 引用，重命名不影响识别。 -->
+    <string-array name="module_scope">
+        <item>com.zhenxi.hunter</item>
+        <item>io.liankong.riskdetector</item>
+        <item>com.globe.gcash.android</item>
+        <item>id.bmri.livin</item>
     </string-array>
 </resources>

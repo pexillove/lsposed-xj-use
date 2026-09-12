@@ -3,12 +3,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lsposedxjuse"
+    // namespace 避开 lsposed/xposed 关键词；applicationId 保持不变以便沿用已配置的作用域
+    namespace = "com.example.xjuse"
     compileSdk = 36
     ndkVersion = "29.0.14206865"
 
     defaultConfig {
-        applicationId = "com.example.lsposedxjuse"
+        // appId 同样避开 lsposed/xposed 关键词；旧 appId 的模块需要先卸载
+    applicationId = "com.example.xjuse"
         minSdk = 27
         targetSdk = 36
         versionCode = 1
@@ -49,5 +51,5 @@ android {
 }
 
 dependencies {
-    compileOnly(project(":xposed-api-stubs"))
+    compileOnly(files("libs/api-82.jar"))
 }

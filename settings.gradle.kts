@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "lsposed-xj-use"
-include(":app", ":xposed-api-stubs")
+include(":app")

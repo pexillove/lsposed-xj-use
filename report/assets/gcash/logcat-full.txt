@@ -1,0 +1,630 @@
+--------- beginning of main
+09-10 18:19:12.852 11618 11618 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+09-10 18:19:12.855 11618 11618 I AndroidRuntime: Using default boot image
+09-10 18:19:12.855 11618 11618 I AndroidRuntime: Leaving lock profiling enabled
+09-10 18:19:12.856 11618 11618 I app_process: Using CollectorTypeCC GC.
+09-10 18:19:12.899 11618 11618 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+09-10 18:19:12.905 11618 11618 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-10 18:19:12.905 11618 11618 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt72l.dat
+09-10 18:19:12.920 11618 11618 W libc    : Access denied finding property "ro.product.name_for_attestation"
+09-10 18:19:12.920 11618 11618 W libc    : Access denied finding property "ro.product.brand_for_attestation"
+09-10 18:19:12.920 11618 11618 W libc    : Access denied finding property "ro.product.model_for_attestation"
+09-10 18:19:12.916 11618 11618 W main    : type=1400 audit(0.0:52882): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=111 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+09-10 18:19:12.920 11618 11618 W main    : type=1400 audit(0.0:52883): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=111 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+09-10 18:19:12.920 11618 11618 W main    : type=1400 audit(0.0:52884): avc:  denied  { read } for  name="u:object_r:build_attestation_prop:s0" dev="tmpfs" ino=111 scontext=u:r:shell:s0 tcontext=u:object_r:build_attestation_prop:s0 tclass=file permissive=0
+09-10 18:19:12.921 11618 11618 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+09-10 18:19:12.921 11618 11618 W Monkey  : args: [-p, com.globe.gcash.android, -c, android.intent.category.LAUNCHER, 1]
+09-10 18:19:12.921 11618 11618 W Monkey  :  arg: "-p"
+09-10 18:19:12.921 11618 11618 W Monkey  :  arg: "com.globe.gcash.android"
+09-10 18:19:12.921 11618 11618 W Monkey  :  arg: "-c"
+09-10 18:19:12.921 11618 11618 W Monkey  :  arg: "android.intent.category.LAUNCHER"
+09-10 18:19:12.921 11618 11618 W Monkey  :  arg: "1"
+09-10 18:19:12.921 11618 11618 W Monkey  : data="com.globe.gcash.android"
+09-10 18:19:12.921 11618 11618 W Monkey  : data="android.intent.category.LAUNCHER"
+--------- beginning of system
+09-10 18:19:12.929  1757  1802 W ActivityManager: registerReceiverWithFeature: no app for null
+09-10 18:19:12.938 11618 11618 W System  : No Compatibility callbacks set! Querying change 263076149
+09-10 18:19:12.938 11618 11618 W System  : No Compatibility callbacks set! Querying change 263076149
+09-10 18:19:12.938 11618 11618 W System  : No Compatibility callbacks set! Querying change 263076149
+09-10 18:19:12.944  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10282; state: DISABLED
+09-10 18:19:12.944  1757  1802 W ActivityTaskManager: callingPackage for (uid=2000, pid=11618) has no WPC
+09-10 18:19:12.946  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 265464455; UID 10282; state: DISABLED
+09-10 18:19:12.946  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 265452344; UID 10282; state: DISABLED
+09-10 18:19:12.947  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 266124927; UID 10282; state: DISABLED
+09-10 18:19:12.947  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 265451093; UID 10282; state: DISABLED
+09-10 18:19:12.948  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 265456536; UID 10282; state: DISABLED
+09-10 18:19:12.948  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 255940284; UID 10282; state: DISABLED
+09-10 18:19:12.948  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 236283604; UID 10282; state: DISABLED
+09-10 18:19:12.948  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 263959004; UID 10282; state: DISABLED
+09-10 18:19:12.949  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 264304459; UID 10282; state: DISABLED
+09-10 18:19:12.949  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 264301586; UID 10282; state: DISABLED
+09-10 18:19:12.949  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 254631730; UID 10282; state: DISABLED
+09-10 18:19:12.949  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 273509367; UID 10282; state: DISABLED
+09-10 18:19:12.950  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 263259275; UID 10282; state: DISABLED
+09-10 18:19:12.950  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10282; state: DISABLED
+09-10 18:19:12.950  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10282; state: DISABLED
+09-10 18:19:12.951  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10282; state: DISABLED
+09-10 18:19:12.965  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 194480991; UID 10282; state: ENABLED
+09-10 18:19:12.972  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10282; state: DISABLED
+09-10 18:19:12.973  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10282; state: DISABLED
+09-10 18:19:12.974   605   671 D hwc-display: setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+09-10 18:19:12.974   605   671 I hwc-display: [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+09-10 18:19:12.976  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10282; state: ENABLED
+09-10 18:19:12.977  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 205907456; UID 10282; state: ENABLED
+09-10 18:19:12.978  1757  1802 D CompatibilityChangeReporter: Compat change id reported: 194833441; UID 10282; state: ENABLED
+09-10 18:19:12.979  1757  1802 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+09-10 18:19:12.979  2110  2133 V WindowManagerShell: Transition requested: android.os.BinderProxy@9a754a0 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=41 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity } baseActivity=ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity} topActivity=ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity} origActivity=null realActivity=ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity} numActivities=1 lastActiveTime=3814150 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@bc7f859} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{fa60c1e gcash.module.splashscreen.mvp.view.SplashScreenActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+09-10 18:19:12.979 11283 11283 D CrashReport: >>> io.liankong.riskdetector.MainActivity onPaused <<<
+09-10 18:19:12.980 11618 11618 I Monkey  : Events injected: 1
+09-10 18:19:12.982  1757  1846 E system_server: updateValue is called with a value {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, which is lower than the previous value {0, 0, 0, 0, 0, 1, 6, 5, 15, 5, 1047, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+09-10 18:19:12.982  1757  1830 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10282; state: DISABLED
+09-10 18:19:12.982  1757  1830 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10282; state: DISABLED
+09-10 18:19:12.982  1757  1830 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10282; state: DISABLED
+09-10 18:19:12.982  1757  1830 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10282; state: ENABLED
+09-10 18:19:12.984  1757  1952 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10282; state: ENABLED
+09-10 18:19:12.990 11618 11618 I Monkey  : ## Network stats: elapsed time=46ms (0ms mobile, 0ms wifi, 46ms not connected)
+09-10 18:19:12.990 11618 11618 I app_process: System.exit called, status: 0
+09-10 18:19:12.990 11618 11618 I AndroidRuntime: VM exiting with result code 0.
+09-10 18:19:12.993   953   953 D Zygote  : Forked child process 11642
+09-10 18:19:12.993  1757  1841 I ActivityManager: Start proc 11642:com.globe.gcash.android/u0a282 for next-top-activity {com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity}
+09-10 18:19:13.004 11642 11642 I e.gcash.android: Using CollectorTypeCC GC.
+09-10 18:19:13.006   603   603 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+09-10 18:19:13.006 11642 11642 E e.gcash.android: Not starting debugger since process cannot load the jdwp agent.
+09-10 18:19:13.019 11642 11642 W System  : ClassLoader referenced unknown path: 
+09-10 18:19:13.019 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.027 11642 11642 W BpBinder: Linking to death on org.fw.bridge.service.IFwAppService but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+09-10 18:19:13.029 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.033 11642 11642 I Core    : Loading zXTgAu for com.globe.gcash.android/10282
+09-10 18:19:13.036 11642 11642 I CoreBridge: Loading legacy module com.local.gcguard from /data/app/~~dWye2VcvHPexoK0k1BgwUw==/com.local.gcguard-mccHF_ClHUVXfamV70Kjxw==/base.apk
+09-10 18:19:13.038 11642 11642 W System  : ClassLoader referenced unknown path: 
+09-10 18:19:13.038 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.038 11642 11642 I CoreBridge:   Loading class com.local.gcguard.Guard
+09-10 18:19:13.039 11642 11642 I CoreBridge: Loading legacy module com.xj.lspsoeduse from /data/app/~~O7Y3apBW0aQwfnoAylNEjQ==/com.xj.lspsoeduse-1LKN2Yyopa1nQoW7NQmjPw==/base.apk
+09-10 18:19:13.042  8343  8470 I ServiceManagerCppClient: Waiting for service 'sensorservice' on '/dev/binder'...
+09-10 18:19:13.044 11642 11642 W System  : ClassLoader referenced unknown path: 
+09-10 18:19:13.044 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.045 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.045 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.045 11642 11642 I CoreBridge:   Loading class com.xj.WOSjqaiuse.HookMain
+09-10 18:19:13.046 11642 11642 I CoreBridge: Loading legacy module com.example.xjuse from /data/app/~~5T_moQYYqfYiseL-uIqDaQ==/com.example.xjuse-n1MolA5L5A5gsypVnEzF_w==/base.apk
+09-10 18:19:13.046 11642 11642 W System  : ClassLoader referenced unknown path: 
+09-10 18:19:13.046 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.046 11642 11642 W e.gcash.android: Unsupported class loader
+09-10 18:19:13.047 11642 11642 I CoreBridge:   Loading class com.example.xjuse.HookEntry
+09-10 18:19:13.055 11642 11642 W LSPosed : target %s not found in solist
+09-10 18:19:13.061  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10282; state: DISABLED
+09-10 18:19:13.061  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10282; state: DISABLED
+09-10 18:19:13.065  1757  1831 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10300; state: ENABLED
+09-10 18:19:13.066 11642 11642 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10282; state: ENABLED
+09-10 18:19:13.066 11642 11642 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10282; state: ENABLED
+09-10 18:19:13.067  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10282; state: ENABLED
+09-10 18:19:13.072 11642 11642 D nativeloader: Configuring clns-4 for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/base.apk!/lib/arm64-v8a:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_mywebdynamicfeature.apk!/lib/arm64-v8a:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_mywebdynamicfeature.config.arm64_v8a.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.globe.gcash.android
+09-10 18:19:13.072 11642 11642 D nativeloader: Extending system_exposed_libraries: libedgetpu_dba.google.so
+09-10 18:19:13.076  1757  1952 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10151; state: DISABLED
+09-10 18:19:13.076  1757  1952 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10151; state: DISABLED
+09-10 18:19:13.076  1757  1952 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10151; state: DISABLED
+09-10 18:19:13.077  1757  1952 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10151; state: ENABLED
+09-10 18:19:13.077  1757  1841 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10151; state: ENABLED
+09-10 18:19:13.086   953   953 D Zygote  : Forked child process 11658
+09-10 18:19:13.087  1757  1841 I ActivityManager: Start proc 11658:com.google.android.apps.turbo:aab/u0a151 for service {com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.library.InferAppBucketsJob}
+09-10 18:19:13.100 11658 11658 I .apps.turbo:aab: Using CollectorTypeCC GC.
+09-10 18:19:13.104 11658 11658 E .apps.turbo:aab: Not starting debugger since process cannot load the jdwp agent.
+09-10 18:19:13.117  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10151; state: DISABLED
+09-10 18:19:13.118  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 273564678; UID 10151; state: DISABLED
+09-10 18:19:13.119  1757  1952 D CompatibilityChangeReporter: Compat change id reported: 265195908; UID 10151; state: ENABLED
+09-10 18:19:13.123 11658 11658 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10151; state: ENABLED
+09-10 18:19:13.123 11658 11658 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10151; state: ENABLED
+09-10 18:19:13.126  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 170503758; UID 10151; state: ENABLED
+09-10 18:19:13.143 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.arm64_v8a.dm': No such file or directory
+09-10 18:19:13.143 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.arm64_v8a.dm': No such file or directory
+09-10 18:19:13.144 11658 11658 W .apps.turbo:aab: Entry not found
+09-10 18:19:13.145 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.en.dm': No such file or directory
+09-10 18:19:13.145 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.en.dm': No such file or directory
+09-10 18:19:13.145 11658 11658 W .apps.turbo:aab: Entry not found
+09-10 18:19:13.145 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.es.dm': No such file or directory
+09-10 18:19:13.145 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.es.dm': No such file or directory
+09-10 18:19:13.146 11658 11658 W .apps.turbo:aab: Entry not found
+09-10 18:19:13.146 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.xxhdpi.dm': No such file or directory
+09-10 18:19:13.146 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.xxhdpi.dm': No such file or directory
+09-10 18:19:13.146 11658 11658 W .apps.turbo:aab: Entry not found
+09-10 18:19:13.147 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.zh.dm': No such file or directory
+09-10 18:19:13.147 11658 11658 W ziparchive: Unable to open '/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.zh.dm': No such file or directory
+09-10 18:19:13.147 11658 11658 W .apps.turbo:aab: Entry not found
+09-10 18:19:13.151 11658 11658 D nativeloader: Configuring clns-4 for other apk /data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/base.apk:/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.arm64_v8a.apk:/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.en.apk:/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.es.apk:/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.xxhdpi.apk:/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/split_config.zh.apk. target_sdk_version=37, uses_libraries=libedgetpu_util.so:libedgetpu_client.google.so:libedgetpu_util.so:libedgetpu_client.google.so, library_path=/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GDoQ4qiL1q0y-jHUwFgsWA==/lib/arm64:/data/app/~~SsRFC_NX6AZs5_PEDZ6wcw==/com.google.android.apps.turbo-GD
+09-10 18:19:13.174 11658 11658 V GraphicsEnvironment: Currently set values for:
+09-10 18:19:13.175 11658 11658 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+09-10 18:19:13.175 11658 11658 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+09-10 18:19:13.175 11658 11658 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.turbo: false
+09-10 18:19:13.175 11658 11658 V GraphicsEnvironment: com.google.android.apps.turbo is not listed in per-application setting
+09-10 18:19:13.175 11658 11658 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-10 18:19:13.181 11658 11658 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10151; state: ENABLED
+09-10 18:19:13.196 11642 11642 W ziparchive: Unable to open '/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_config.arm64_v8a.dm': No such file or directory
+09-10 18:19:13.196 11642 11642 W ziparchive: Unable to open '/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_config.arm64_v8a.dm': No such file or directory
+09-10 18:19:13.196 11642 11642 W e.gcash.android: Entry not found
+09-10 18:19:13.196 11658 11658 W .apps.turbo:aab: Method void dot.c(android.app.Activity) failed lock verification and will run slower.
+09-10 18:19:13.196 11658 11658 W .apps.turbo:aab: Common causes for lock verification issues are non-optimized dex code
+09-10 18:19:13.196 11658 11658 W .apps.turbo:aab: and incorrect proguard optimizations.
+09-10 18:19:13.197 11658 11658 W Turbo.TurboApplication: Going to the application!
+09-10 18:19:13.199  1757  2843 I ActivityManager: Flag disabled. Ignoring finishAttachApplication from uid: 10151. pid: 11658
+09-10 18:19:13.201 11642 11642 W ziparchive: Unable to open '/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_mywebdynamicfeature.config.arm64_v8a.dm': No such file or directory
+09-10 18:19:13.201 11642 11642 W ziparchive: Unable to open '/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_mywebdynamicfeature.config.arm64_v8a.dm': No such file or directory
+09-10 18:19:13.201 11642 11642 W e.gcash.android: Entry not found
+09-10 18:19:13.201 11642 11642 D nativeloader: Configuring clns-5 for other apk /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/base.apk:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_config.arm64_v8a.apk:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_mywebdynamicfeature.apk:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_mywebdynamicfeature.config.arm64_v8a.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/base.apk!/lib/arm64-v8a:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/split_mywebdynamicfeature.apk!/lib/arm64-v8a:/data/app/~~V0
+09-10 18:19:13.204 11642 11642 E GCGUARD : loaded in com.globe.gcash.android
+09-10 18:19:13.204 11642 11693 D TrafficStats: tagSocket(66) with statsTag=0xffffffff, statsUid=-1
+09-10 18:19:13.205 11642 11693 D TrafficStats: tagSocket(67) with statsTag=0xffffffff, statsUid=-1
+09-10 18:19:13.205 11642 11693 E GCGUARD : plantsock connected: 127.0.0.1:34132 -> 127.0.0.1:35205
+09-10 18:19:13.205 11642 11694 D TrafficStats: tagSocket(69) with statsTag=0xffffffff, statsUid=-1
+09-10 18:19:13.205 11642 11694 E GCGUARD : plantsock accepted, holding
+09-10 18:19:13.206 11642 11642 E GCGUARD : hooked verdict runnable u6qsY6$6.run
+09-10 18:19:13.207 11642 11642 E GCGUARD : hookOne m592z0.h4GzE6.tnKsp1.u6qsY6.r6Qtx6 hooked=1
+09-10 18:19:13.207 11642 11642 E GCGUARD : hookOne m592z0.h4GzE6.tnKsp1.rHBWw5.w94zy3 hooked=1
+09-10 18:19:13.207 11642 11642 E GCGUARD : hooked Activity.finish*
+09-10 18:19:13.208 11642 11642 E GCGUARD : hooked Toast.*
+09-10 18:19:13.208 11642 11642 E GCGUARD : hooked fw-alert builder
+09-10 18:19:13.209 11642 11642 E GCGUARD : hooked androidx-alert builder
+09-10 18:19:13.209 11642 11642 E GCGUARD : hooked Dialog.show
+09-10 18:19:13.213 11642 11642 E GCGUARD : hooked ALL u6qsY6 methods
+09-10 18:19:13.213 11642 11642 E GCGUARD : hooked suicide calls
+09-10 18:19:13.213 11642 11642 E testhook: handleLoadPackage: com.globe.gcash.android
+09-10 18:19:13.216 11642 11642 D nativeloader: Configuring clns-6 for other apk . target_sdk_version=35, uses_libraries=ALL, library_path=/data/app/~~5T_moQYYqfYiseL-uIqDaQ==/com.example.xjuse-n1MolA5L5A5gsypVnEzF_w==/base.apk!/lib/arm64-v8a:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand
+09-10 18:19:13.216 11642 11642 D nativeloader: Extending system_exposed_libraries: libedgetpu_dba.google.so
+09-10 18:19:13.216 11642 11642 W e.gcash.android: type=1400 audit(0.0:52885): avc:  granted  { execute } for  path="/data/data/com.globe.gcash.android/code_cache/.00002d7a00000007.xjtmpfile" dev="dm-47" ino=214867 scontext=u:r:untrusted_app:s0:c26,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c26,c257,c512,c768 tclass=file app=com.globe.gcash.android
+09-10 18:19:13.233 11642 11642 I XjUse   : DobbyXjHook installed; Dobby=Dobby, pid=11642, hits=1; solistClear(&JNI_OnLoad) executed
+09-10 18:19:13.233 11642 11642 I CoreBridge: [XJ-USE] XjUse: Log.i hook hits=1 tag=CoreBridge in com.globe.gcash.android
+09-10 18:19:13.233 11642 11642 I CoreBridge: [XJ-USE] XjUse: DobbyXjHook installed; Dobby=Dobby, pid=11642, hits=1; solistClear(&JNI_OnLoad) executed in com.globe.gcash.android
+09-10 18:19:13.239 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(22) called
+09-10 18:19:13.239 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(26) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(29) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(0) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(1) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(6) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(12) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(2) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(3) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(4) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(5) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(7) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(8) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(9) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(10) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(23) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(27) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(29) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(30) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(31) called
+09-10 18:19:13.240 11642 11642 E testhook: [NetworkBypass] NetworkCapabilities.hasCapability(33) called
+09-10 18:19:13.243 11642 11642 V GraphicsEnvironment: Currently set values for:
+09-10 18:19:13.243 11642 11642 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+09-10 18:19:13.243 11642 11642 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+09-10 18:19:13.243 11642 11642 V GraphicsEnvironment: ANGLE GameManagerService for com.globe.gcash.android: false
+09-10 18:19:13.243 11642 11642 V GraphicsEnvironment: com.globe.gcash.android is not listed in per-application setting
+09-10 18:19:13.243 11642 11642 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-10 18:19:13.250 11642 11642 I LoadedApk: No resource references to update in package com.globe.gcash.android.mywebdynamicfeature
+09-10 18:19:13.259 11642 11642 E linker  : "/data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so": ignoring DT_PREINIT_ARRAY in shared library!
+09-10 18:19:13.277 11658 11692 W Turbo.InferAppBucketsJob: Models given by config: 1
+09-10 18:19:13.285 11642 11642 E [     ] : [TID: 11642] [:0]  QOITXKOQ_meUce\ccSMFJPIMMVWSOYY]Y[
+09-10 18:19:13.285 11642 11642 I [CORE]  : server fused app token: 1ab8882f-99d9-4fa1-adb7-edaac1720578
+09-10 18:19:13.297  1757  1802 D ActivityManager: sync unfroze 3215 com.google.process.gservices for 7
+--------- beginning of crash
+09-10 18:19:13.325 11642 11642 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7af6ee0000 in tid 11642 (e.gcash.android), pid 11642 (e.gcash.android)
+09-10 18:19:13.362 11729 11729 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-10 18:19:13.364   733   733 I tombstoned: received crash request for pid 11642
+09-10 18:19:13.366 11729 11729 I crash_dump64: performing dump of process 11642 (target tid = 11642)
+09-10 18:19:13.399 11642 11707 I DrmHalHidl: No hidl drm factories found
+09-10 18:19:13.400   536   536 I hwservicemanager: getTransport: Cannot find entry android.hardware.drm@1.0::IDrmFactory/default in either framework or device VINTF manifest.
+09-10 18:19:13.400 11642 11707 E DrmHalHidl: Failed to find passthrough drm factories
+09-10 18:19:13.401 11642 11707 I DrmUtils: found IDrmFactory. Instance name:[android.hardware.drm.IDrmFactory/clearkey]
+09-10 18:19:13.401 11642 11707 I DrmUtils: found IDrmFactory. Instance name:[android.hardware.drm.IDrmFactory/widevine]
+09-10 18:19:13.402  1038  1038 I WVCdm-DrmFactory: [app][com.globe.gcash.android] calling virtual ::ndk::ScopedAStatus wvdrm::hardware::drm::widevine::WVDrmFactory::createDrmPlugin(const Uuid &, const string &, std::shared_ptr< ::aidl::android::hardware::drm::IDrmPlugin> *)
+09-10 18:19:13.402  1038  1038 D WVCdm   : Instantiating CDM.
+09-10 18:19:13.403  1038  1038 D WVCdm   : [cdm_engine.cpp(581):QueryStatus] security_level = Default, query_token = WidevineCdmVersion
+09-10 18:19:13.403  1038  1038 I WVCdm   : [file_utils.cpp(38):Exists] stat failed: ENOENT
+09-10 18:19:13.403  1038  1038 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(837):Initialize] Level 3 Build Info (v18): {"soc_vendor":"L3_28613","soc_model":"ARM 64 bit","ta_ver":"18.1.0+May  1 2023_06:32:58_","uses_opk":false,"tee_os":"none","tee_os_ver":"0.0.0","form_factor":"L3","implementer":"Widevine","fused":false}
+09-10 18:19:13.420  1038 11733 I WVCdm   : [(0):] Level3 Library 28613 May  1 2023 06:32:58
+09-10 18:19:13.423  1038  1038 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(851):Initialize] L3 Initialized. Trying L1.
+09-10 18:19:13.423  1038  1038 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(924):LoadLevel1] Still falling back to L3.
+09-10 18:19:13.423  1038  1038 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(900):Level1Terminate] L1 Terminate not needed
+09-10 18:19:13.423  1038  1038 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(1337):ValidateOrInstallL1KeyboxOrCert] L1 not initialized. Falling back to L3
+09-10 18:19:13.423  1038  1038 I WVCdm   : [file_utils.cpp(38):Exists] stat failed: ENOENT
+09-10 18:19:13.423  1038  1038 W WVCdm   : [oemcrypto_adapter_dynamic.cpp(1549):OEMCrypto_InitializeAndCheckKeybox] Keybox error: 28. Falling back to L3.
+09-10 18:19:13.423  1038  1038 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(900):Level1Terminate] L1 Terminate not needed
+09-10 18:19:13.423  1038  1038 D WVCdm   : [crypto_session.cpp(439):CacheVersion] OEMCrypto version (default security level): 18.1
+09-10 18:19:13.423  1038  1038 D WVCdm   : [crypto_session.cpp(448):CacheVersion] OEMCrypto version (L3 security level): 18.1
+09-10 18:19:13.423  1038  1038 D WVCdm   : [cdm_engine.cpp(581):QueryStatus] security_level = Default, query_token = DeviceID
+09-10 18:19:13.423  1038  1038 D WVCdm   : [crypto_session.cpp(891):Open] Opening crypto session: requested_security_level = Default
+09-10 18:19:13.423  1038  1038 D WVCdm   : [cdm_usage_table.cpp(162):Init] security_level = L3
+09-10 18:19:13.423  1038  1038 D WVCdm   : [cdm_usage_table.cpp(501):DetermineTableCapacity] capacity = unlimited, security_level = L3
+09-10 18:19:13.423  1038  1038 I WVCdm   : [cdm_usage_table.cpp(203):RestoreTable] Found usage table to restore: entry_count = 0
+09-10 18:19:13.424  1038  1038 I WVCdm   : [file_utils.cpp(38):Exists] stat failed: ENOENT
+09-10 18:19:13.424  1038  1038 E WVCdm   : [wv_content_decryption_module.cpp(556):GetCurrentMetricsInternal] Cdm Identifier not found
+09-10 18:19:13.425  1038  1038 E WVCdm   : [wv_content_decryption_module.cpp(639):CloseCdm] Cdm Identifier not found
+09-10 18:19:13.425  1038  1038 E WVCdm   : Failed to close cdm. status 12
+09-10 18:19:13.425  1038  1038 I WVCdm   : [(0):] L3 Terminate.
+09-10 18:19:13.426 11658 11692 W Turbo.ModelFactory: current model: 13
+09-10 18:19:13.542 11729 11729 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-10 18:19:13.542 11729 11729 F DEBUG   : Build fingerprint: 'google/oriole/oriole:14/UP1A.231005.007/10754064:user/release-keys'
+09-10 18:19:13.542 11729 11729 F DEBUG   : Revision: 'MP1.0'
+09-10 18:19:13.542 11729 11729 F DEBUG   : ABI: 'arm64'
+09-10 18:19:13.542 11729 11729 F DEBUG   : Timestamp: 2026-09-10 18:19:13.402102041+0700
+09-10 18:19:13.542 11729 11729 F DEBUG   : Process uptime: 1s
+09-10 18:19:13.542 11729 11729 F DEBUG   : Cmdline: com.globe.gcash.android
+09-10 18:19:13.542 11729 11729 F DEBUG   : pid: 11642, tid: 11642, name: e.gcash.android  >>> com.globe.gcash.android <<<
+09-10 18:19:13.542 11729 11729 F DEBUG   : uid: 10282
+09-10 18:19:13.542 11729 11729 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-10 18:19:13.542 11729 11729 F DEBUG   : signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x0000007af6ee0000
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x0  0000007af6ee0000  x1  00000077cc677020  x2  0000000000091f80  x3  0000000000000002
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x4  0000000000000000  x5  0000000000043000  x6  0000007af6edffe0  x7  000000005cef119d
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x8  00000000000000de  x9  000000008b34565d  x10 00000077cc677000  x11 000000001f1f9ce6
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x12 000000008b581533  x13 000000007483becf  x14 000000007483bed0  x15 000000007645e0d4
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x16 00000077da56c388  x17 0000007af6ef90a0  x18 0000007b11578000  x19 000000005670467b
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x20 000000008b8ac96a  x21 000000006efedc6b  x22 0000007ff53382ad  x23 0000007ff533938c
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x24 00000000135d9349  x25 000000005670467c  x26 0000000000092000  x27 000000008fd96ff7
+09-10 18:19:13.542 11729 11729 F DEBUG   :     x28 00000077cc677000  x29 0000007ff53392c0
+09-10 18:19:13.542 11729 11729 F DEBUG   :     lr  00000077d9ced20c  sp  0000007ff53381b0  pc  00000077d9f7c58c  pst 0000000020001000
+09-10 18:19:13.542 11729 11729 F DEBUG   : 62 total frames
+09-10 18:19:13.542 11729 11729 F DEBUG   : backtrace:
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #00 pc 000000000034c58c  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #01 pc 00000000000bd208  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #02 pc 00000000000bd5ec  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #03 pc 0000000000490e70  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #04 pc 00000000000bdc30  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #05 pc 0000000000213680  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #06 pc 0000000000142ae4  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #07 pc 00000000000e3144  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #08 pc 000000000014301c  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #09 pc 0000000000143c6c  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #10 pc 00000000003646c0  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/lib/arm64/libloader.so
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #11 pc 0000000000061480  /apex/com.android.runtime/bin/linker64 (__dl__ZN6soinfo17call_constructorsEv+752) (BuildId: 84633a53633fd67f65f1d8aa0f165e83)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #12 pc 000000000004b640  /apex/com.android.runtime/bin/linker64 (__dl__Z9do_dlopenPKciPK17android_dlextinfoPKv+2720) (BuildId: 84633a53633fd67f65f1d8aa0f165e83)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #13 pc 00000000000454b0  /apex/com.android.runtime/bin/linker64 (__dl__ZL10dlopen_extPKciPK17android_dlextinfoPKv.__uniq.234527301065430621646263515731762262959+80) (BuildId: 84633a53633fd67f65f1d8aa0f165e83)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #14 pc 0000000000001110  /apex/com.android.runtime/lib64/bionic/libdl.so (android_dlopen_ext+16) (BuildId: 85dd28ade5efceab9146302c572103cf)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #15 pc 000000000001da24  /apex/com.android.art/lib64/libnativeloader.so (android::NativeLoaderNamespace::Load(char const*) const+184) (BuildId: 6a311242b7ed5eeb144f6566b584b5f9)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #16 pc 000000000000de18  /apex/com.android.art/lib64/libnativeloader.so (OpenNativeLibraryInNamespace+68) (BuildId: 6a311242b7ed5eeb144f6566b584b5f9)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #17 pc 000000000000d550  /apex/com.android.art/lib64/libnativeloader.so (OpenNativeLibrary+132) (BuildId: 6a311242b7ed5eeb144f6566b584b5f9)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #18 pc 00000000004f684c  /apex/com.android.art/lib64/libart.so (art::JavaVMExt::LoadNativeLibrary(_JNIEnv*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, _jobject*, _jclass*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*)+668) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #19 pc 00000000000051c0  /apex/com.android.art/lib64/libopenjdkjvm.so (JVM_NativeLoad+412) (BuildId: d113bdf2e41e1487cc3a16a5e5c091c5)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #20 pc 000000000031a95c  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (art_jni_trampoline+156)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #21 pc 000000000034e4c8  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (java.lang.Runtime.loadLibrary0+328)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #22 pc 000000000034f6c0  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (java.lang.Runtime.loadLibrary0+368)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #23 pc 00000000012b2820  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/oat/arm64/base.odex (m592z0.h4GzE6.tnKsp1.ekDXv3.staticInit+288)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #24 pc 0000000000589c18  /apex/com.android.art/lib64/libart.so (nterp_helper+152) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #25 pc 00000000007c9258  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/base.apk (gcash.common.android.application.GKApplication.<clinit>+0)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #26 pc 0000000000360680  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+640) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #27 pc 0000000000277258  /apex/com.android.art/lib64/libart.so (art::ClassLinker::InitializeClass(art::Thread*, art::Handle<art::mirror::Class>, bool, bool)+4104) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #28 pc 00000000002772c8  /apex/com.android.art/lib64/libart.so (art::ClassLinker::InitializeClass(art::Thread*, art::Handle<art::mirror::Class>, bool, bool)+4216) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #29 pc 00000000002772c8  /apex/com.android.art/lib64/libart.so (art::ClassLinker::InitializeClass(art::Thread*, art::Handle<art::mirror::Class>, bool, bool)+4216) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #30 pc 000000000026eed0  /apex/com.android.art/lib64/libart.so (art::ClassLinker::EnsureInitialized(art::Thread*, art::Handle<art::mirror::Class>, bool, bool)+160) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #31 pc 0000000000562ec4  /apex/com.android.art/lib64/libart.so (art::Class_newInstance(_JNIEnv*, _jobject*) (.__uniq.181829539739573773940154555818377431209)+2476) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #32 pc 000000000031a1dc  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (art_jni_trampoline+92)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #33 pc 0000000000777a98  /data/app/~~V080vi1s4JQKqkl0PIsQ_w==/com.globe.gcash.android-p7Uf-6_AXRHHXLFDHKyilw==/oat/arm64/base.odex (androidx.core.app.CoreComponentFactory.instantiateApplication+88)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #34 pc 00000000003603a4  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #35 pc 00000000004903a0  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, bool, art::JValue*)+1004) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #36 pc 0000000000509d7c  /apex/com.android.art/lib64/libart.so (void art::interpreter::ExecuteSwitchImplCpp<false>(art::interpreter::SwitchImplContext*)+780) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #37 pc 00000000003795d8  /apex/com.android.art/lib64/libart.so (ExecuteSwitchImplAsm+8) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #38 pc 00000000002395a4  /system/framework/framework.jar (android.app.Instrumentation.newApplication+0)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #39 pc 000000000037cbfc  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool) (.__uniq.112435418011751916792819755956732575238.llvm.13156664521685854434)+356) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #40 pc 000000000037c3dc  /apex/com.android.art/lib64/libart.so (artQuickToInterpreterBridge+788) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #41 pc 0000000000376f68  /apex/com.android.art/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #42 pc 0000000000678f68  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (android.app.LoadedApk.makeApplicationInner+1896)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #43 pc 00000000007515fc  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (android.app.ActivityThread.handleBindApplication+5164)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #44 pc 0000000000745ae0  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (android.app.ActivityThread$H.handleMessage+8912)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #45 pc 00000000009e6448  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (android.os.Handler.dispatchMessage+168)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #46 pc 00000000009ea24c  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (android.os.Looper.loopOnce+1036)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #47 pc 00000000009e9d98  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (android.os.Looper.loop+1112)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #48 pc 000000000075d7cc  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (android.app.ActivityThread.main+2316)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #49 pc 0000000000360680  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+640) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #50 pc 000000000026a97c  /apex/com.android.art/lib64/libart.so (_jobject* art::InvokeMethod<(art::PointerSize)8>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned long)+780) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #51 pc 000000000026a660  /apex/com.android.art/lib64/libart.so (art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobjectArray*) (.__uniq.165753521025965369065708152063621506277)+32) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #52 pc 00000000003206a8  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (art_jni_trampoline+120)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #53 pc 0000000000bf9ca4  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run+132)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #54 pc 0000000000c0530c  /data/misc/apexdata/com.android.art/dalvik-cache/arm64/boot.oat (com.android.internal.os.ZygoteInit.main+3356)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #55 pc 0000000000360680  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+640) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #56 pc 00000000004942a0  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeWithVarArgs<_jmethodID*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, std::__va_list)+516) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #57 pc 0000000000553310  /apex/com.android.art/lib64/libart.so (art::JNI<true>::CallStaticVoidMethodV(_JNIEnv*, _jclass*, _jmethodID*, std::__va_list)+112) (BuildId: b221ddf9493596dec8a84b0692083bef)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #58 pc 00000000000d9ca8  /system/lib64/libandroid_runtime.so (_JNIEnv::CallStaticVoidMethod(_jclass*, _jmethodID*, ...)+104) (BuildId: 13df5aafcce6ced5850008051295413b)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #59 pc 00000000000e5e2c  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&, bool)+860) (BuildId: 13df5aafcce6ced5850008051295413b)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #60 pc 000000000000254c  /system/bin/app_process64 (main+1260) (BuildId: e8762c072e6c37bb8093e340cc42e9f2)
+09-10 18:19:13.542 11729 11729 F DEBUG   :       #61 pc 00000000000546e8  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+104) (BuildId: 19c32900d9d702c303d2b4164fbba76c)
+09-10 18:19:13.552   733   733 E tombstoned: Tombstone written to: tombstone_10
+09-10 18:19:13.558  1757 11737 W ActivityTaskManager:   Force finishing activity com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity
+09-10 18:19:13.566  1757  2843 I ActivityManager: Process com.globe.gcash.android (pid 11642) has died: fg  TOP 
+09-10 18:19:13.566   953   953 I Zygote  : Process 11642 exited due to signal 11 (Segmentation fault)
+09-10 18:19:13.568  1757  1828 D DisplayManagerService: Drop pending events for gone uid 10282
+09-10 18:19:13.570 11283 11283 D CrashReport: >>> io.liankong.riskdetector.MainActivity onResumed <<<
+09-10 18:19:13.572  1757  1842 I libprocessgroup: Successfully killed process cgroup uid 10282 pid 11642 in 0ms
+09-10 18:19:13.573  1757 11738 I DropBoxManagerService: add tag=data_app_native_crash isTagEnabled=true flags=0x2
+09-10 18:19:13.583  2110  2133 V WindowManagerShell: onTransitionReady android.os.BinderProxy@9a754a0: {id=107 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@2f6c115} m=CHANGE f=MOVE_TO_TOP leash=Surface(name=Task=40)/@0xe987cff sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+09-10 18:19:13.583  2110  2133 V WindowManagerShell: Playing animation for (#107)android.os.BinderProxy@9a754a0@0
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@c6b752f
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@f5ebee0
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@abfb599
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@a4b205e
+09-10 18:19:13.583  2110  2133 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@c8d9c3f
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@5a0e90c
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@7cd1255
+09-10 18:19:13.583  2110  2133 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=107 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@2f6c115} m=CHANGE f=MOVE_TO_TOP leash=Surface(name=Task=40)/@0xe987cff sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@a3368a1, appThread = android.app.IApplicationThread$Stub$Proxy@f4acac6, debugName = LauncherToDream }}
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@7c4da87, appThread = android.app.IApplicationThread$Stub$Proxy@4d05db4, debugName = QuickstepLaunchHome }}
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  Delegate animation for #107 to null
+09-10 18:19:13.583  2110  2133 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@524dd36
+09-10 18:19:13.583  2110  2133 V WindowManagerShell: start default transition animation, info = {id=107 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@2f6c115} m=CHANGE f=MOVE_TO_TOP leash=Surface(name=Task=40)/@0xe987cff sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+09-10 18:19:13.584  2110  2133 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#107)android.os.BinderProxy@9a754a0@0
+09-10 18:19:13.586  1757  1827 V WindowManager: Sent Transition #107 createdAt=09-10 18:19:12.966 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=41 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity } baseActivity=ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity} topActivity=ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity} origActivity=null realActivity=ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity} numActivities=1 lastActiveTime=3814150 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{3182706 Task{a11f57b #41 type=standard A=10282:com.globe.gcash.android}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{1d0a1c7 gcash.module.splashscreen.mvp.view.SplashScreenActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+09-10 18:19:13.586  1757  1827 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+09-10 18:19:13.586  1757  1827 V WindowManager:     info={id=107 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{532968e Task{b7e441d #40 type=standard A=10300:io.liankong.riskdetector}}} m=CHANGE f=MOVE_TO_TOP leash=Surface(name=Task=40)/@0x19bdd90 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+09-10 18:19:13.589  1757  1827 V WindowManager: Finish Transition #107: created at 09-10 18:19:12.966 collect-started=0.18ms request-sent=12.064ms started=15.645ms ready=604.923ms sent=615.789ms finished=622.846ms
+09-10 18:19:13.589  2110  2133 V WindowManagerShell: Track 0 became idle
+09-10 18:19:13.589  2110  2133 V WindowManagerShell: All active transition animations finished
+09-10 18:19:13.589  2110  2133 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@524dd36
+09-10 18:19:13.590  2110  2133 V WindowManagerShell: Track 0 became idle
+09-10 18:19:13.590  2110  2133 V WindowManagerShell: All active transition animations finished
+09-10 18:19:13.595  1757  1956 I BootReceiver: Copying /data/tombstones/tombstone_10 to DropBox (SYSTEM_TOMBSTONE)
+09-10 18:19:13.596  1757  1956 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+09-10 18:19:13.598  1757  3726 D CompatibilityChangeReporter: Compat change id reported: 214016041; UID 10300; state: ENABLED
+09-10 18:19:13.598  1757  3726 I ImeTracker: io.liankong.riskdetector:13a200e4: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR
+09-10 18:19:13.598  1757  3726 I ImeTracker: io.liankong.riskdetector:13a200e4: onCancelled at PHASE_SERVER_SHOULD_HIDE
+09-10 18:19:13.599  3975  3975 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2361 
+09-10 18:19:13.600  3975  3975 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1532 onStartInput(EditorInfo{EditorInfo{packageName=io.liankong.riskdetector, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+09-10 18:19:13.600  3975  3975 W LatinIMEBase: LatinIMEBase.updateInputViewCoverNavigation():321 Null input view, cannot update padding!
+09-10 18:19:13.600  3975 11739 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+09-10 18:19:13.600  3975 11739 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+09-10 18:19:13.601  1757  2843 W PackageConfigPersister: App-specific configuration not found for packageName: io.liankong.riskdetector and userId: 0
+09-10 18:19:13.615  1757  1956 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS isTagEnabled=true flags=0x4
+09-10 18:19:13.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52886): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:13.790 11658 11692 W Turbo.ModelFactory: current model: 12
+09-10 18:19:13.811 11658 11692 I TensorFlowLite: Loaded native library: tensorflowlite_jni
+09-10 18:19:13.814 11658 11692 I TensorFlowLite: Didn't load native library: tensorflowlite_jni_gms_client
+09-10 18:19:13.815 11658 11692 I tflite  : Initialized TensorFlow Lite runtime.
+09-10 18:19:13.817 11658 11692 W libc    : Access denied finding property "ro.mediatek.platform"
+09-10 18:19:13.817 11658 11692 W libc    : Access denied finding property "ro.chipname"
+09-10 18:19:13.817 11658 11692 W libc    : Access denied finding property "ro.hardware.chipname"
+09-10 18:19:13.940 11658 11692 W Turbo.DataInjectorUtils: shouldApplyDenyList() feature is disabled
+09-10 18:19:13.948  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10151; state: ENABLED
+09-10 18:19:13.965  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10144; state: ENABLED
+09-10 18:19:13.966  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10144; state: ENABLED
+09-10 18:19:13.967  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10263; state: ENABLED
+09-10 18:19:13.967  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10263; state: ENABLED
+09-10 18:19:13.967  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10299; state: ENABLED
+09-10 18:19:13.967  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10299; state: ENABLED
+09-10 18:19:13.968  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10262; state: ENABLED
+09-10 18:19:13.968  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10262; state: ENABLED
+09-10 18:19:13.968  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10300; state: ENABLED
+09-10 18:19:13.968  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10300; state: ENABLED
+09-10 18:19:13.969  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10282; state: ENABLED
+09-10 18:19:13.970  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10282; state: ENABLED
+09-10 18:19:13.971  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10174; state: ENABLED
+09-10 18:19:13.972  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10174; state: ENABLED
+09-10 18:19:13.973  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 218533173; UID 10079; state: ENABLED
+09-10 18:19:13.973  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 262645982; UID 10079; state: ENABLED
+09-10 18:19:13.977 11658 11692 W Turbo.AppStandbyBucketManager: Successfully invoked usm.setAppStandbyBuckets()
+09-10 18:19:13.979 11658 11692 E ActivityThread: Failed to find provider info for com.android.settings.fuelgauge.provider.command
+09-10 18:19:14.046 11658 11692 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10151; state: ENABLED
+09-10 18:19:14.046 11658 11692 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 10151; state: ENABLED
+09-10 18:19:14.048  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 10151; state: ENABLED
+09-10 18:19:14.048  1757  2843 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10151; state: ENABLED
+09-10 18:19:14.060  1757  1830 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{1c8690a u0 com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity t-1 f}}
+09-10 18:19:14.092  1757  3726 D CompatibilityChangeReporter: Compat change id reported: 261072174; UID 10151; state: ENABLED
+09-10 18:19:14.138  3564  3564 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+09-10 18:19:14.172  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.179  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.182  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.186  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.191  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.195  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.197  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.200  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.202  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.204  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.209  2925 11749 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-10 18:19:14.223  1757  3726 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+09-10 18:19:14.230  1757  3726 D ActivityManager: sync unfroze 13767 com.google.android.rkpdapp for 6
+09-10 18:19:14.234  1757  1757 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+09-10 18:19:14.239  1757  3726 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+09-10 18:19:14.243  1757  2843 I RemoteProvisionSysSvc: Fetching key 10167 for client 263211547
+09-10 18:19:14.243  1757  2843 I RegistrationProxy: getKeyAsync operation started with callback 8779704
+09-10 18:19:14.244 13767 13790 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10167, callback: 252324755
+09-10 18:19:14.246 13767 13790 I RkpdRegistrationBinder: Key successfully assigned to client
+09-10 18:19:14.247  1757  1757 I RemoteProvisionSysSvc: Successfully fetched key for client 263211547
+09-10 18:19:14.421  1757  1798 I system_server: Background young concurrent copying GC freed 1995749(68MB) AllocSpace objects, 32(1604KB) LOS objects, 47% free, 76MB/146MB, paused 500us,368us total 121.708ms
+09-10 18:19:14.426  1757  1800 W System  : A resource failed to call close. 
+09-10 18:19:14.426  1757  1800 W System  : A resource failed to call close. 
+09-10 18:19:14.427  1757  1800 W System  : A resource failed to call release. 
+09-10 18:19:14.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52887): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:14.833  2925 11749 I PlatformStatsUtil: (REDACTED) Uploading %d dropbox entries to Clearcut
+09-10 18:19:14.859  2925  2925 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+09-10 18:19:15.101   605   671 D hwc-display: setActiveConfigWithConstraints:: PrimaryDisplay config(36) test(0)
+09-10 18:19:15.101   605   671 I hwc-display: [PrimaryDisplay] setActiveConfigWithConstraints: config(36)
+09-10 18:19:15.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52888): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:15.740 11755 11755 I securedpud.slider: starting securedpud
+09-10 18:19:15.740 11755 11755 I securedpud.slider: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:15.740 11755 11755 I DMABUFHEAPS: Using DMA-BUF heap named: tui-secure
+09-10 18:19:15.741 11755 11755 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.secure_dpu" (err=107)
+09-10 18:19:15.741 11755 11755 E securedpud.slider: Failed to connect to: /dev/trusty-ipc-dev0
+09-10 18:19:15.748 11756 11756 I trusty_metricsd: starting trusty_metricsd
+09-10 18:19:15.748 11756 11756 I trusty_metricsd: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:15.753 11756 11756 E libtrusty: tipc_connect: can't connect to tipc service "com.android.frameworks.stats.trusty.metrics.istats_setter" (err=107)
+09-10 18:19:15.753 11756 11756 E RpcTrusty: Failed to connect to Trusty service. Error code: -107
+09-10 18:19:15.753 11756 11756 E RpcTrusty: Failed to set up Trusty client. Error: BAD_VALUE
+09-10 18:19:15.753 11756 11756 E trusty_metricsd: failed to connect TrustyMetricsPixel to Trusty: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:15.753 11756 11756 W RefBase : RefBase: Explicit destruction, weak count = 0 (in 0xb400007ca6848478). Use sp<> to manage this object.
+09-10 18:19:15.753 11756 11756 W RefBase : CallStack::getCurrentInternal not linked, returning null
+09-10 18:19:15.753 11756 11756 W RefBase : CallStack::logStackInternal not linked
+09-10 18:19:15.753 11756 11756 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:15.753 11756 11756 E trusty_metricsd: trying to connect to Trusty metrics TA at old TIPC port
+09-10 18:19:15.754 11756 11756 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.metrics" (err=107)
+09-10 18:19:15.754 11756 11756 E trusty_metricsd: failed to open TrustyMetricsPixelTipc: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:15.754 11756 11756 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:15.780 11757 11757 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:15.781 11757 11757 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:15.821 11758 11758 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:15.821 11758 11758 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:16.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52889): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:17.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52890): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:18.052  8343  8470 W ServiceManagerCppClient: Service sensorservice didn't start. Returning NULL
+09-10 18:19:18.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52891): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:19.056  8343  8470 I ServiceManagerCppClient: Waiting for service 'sensorservice' on '/dev/binder'...
+09-10 18:19:19.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52892): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:20.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52893): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:20.756 11770 11770 I securedpud.slider: starting securedpud
+09-10 18:19:20.756 11770 11770 I securedpud.slider: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:20.757 11770 11770 I DMABUFHEAPS: Using DMA-BUF heap named: tui-secure
+09-10 18:19:20.758 11770 11770 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.secure_dpu" (err=107)
+09-10 18:19:20.758 11770 11770 E securedpud.slider: Failed to connect to: /dev/trusty-ipc-dev0
+09-10 18:19:20.765 11771 11771 I trusty_metricsd: starting trusty_metricsd
+09-10 18:19:20.765 11771 11771 I trusty_metricsd: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:20.769 11771 11771 E libtrusty: tipc_connect: can't connect to tipc service "com.android.frameworks.stats.trusty.metrics.istats_setter" (err=107)
+09-10 18:19:20.769 11771 11771 E RpcTrusty: Failed to connect to Trusty service. Error code: -107
+09-10 18:19:20.769 11771 11771 E RpcTrusty: Failed to set up Trusty client. Error: BAD_VALUE
+09-10 18:19:20.769 11771 11771 E trusty_metricsd: failed to connect TrustyMetricsPixel to Trusty: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:20.769 11771 11771 W RefBase : RefBase: Explicit destruction, weak count = 0 (in 0xb4000076dfda59f8). Use sp<> to manage this object.
+09-10 18:19:20.769 11771 11771 W RefBase : CallStack::getCurrentInternal not linked, returning null
+09-10 18:19:20.769 11771 11771 W RefBase : CallStack::logStackInternal not linked
+09-10 18:19:20.769 11771 11771 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:20.769 11771 11771 E trusty_metricsd: trying to connect to Trusty metrics TA at old TIPC port
+09-10 18:19:20.771 11771 11771 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.metrics" (err=107)
+09-10 18:19:20.772 11771 11771 E trusty_metricsd: failed to open TrustyMetricsPixelTipc: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:20.772 11771 11771 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:20.794 11772 11772 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:20.795 11772 11772 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:20.839 11773 11773 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:20.839 11773 11773 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:21.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52894): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:22.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52895): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:23.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52896): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:24.066  8343  8470 W ServiceManagerCppClient: Service sensorservice didn't start. Returning NULL
+09-10 18:19:24.100  1757  1961 D ActivityManager: freezing 11658 com.google.android.apps.turbo:aab
+09-10 18:19:24.102  1757  1961 D ActivityManager: freezing 3215 com.google.process.gservices
+09-10 18:19:24.200   970  1222 I bthal.flowcontrol: HciEventPreProcess: HCI Event 0xe Opcode 0xfd59 Length 22 unhandled by ControllerActivityWatcher
+09-10 18:19:24.248  1757  1961 D ActivityManager: freezing 13767 com.google.android.rkpdapp
+09-10 18:19:24.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52897): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:24.782   591 11750 I keystore2: system/security/keystore2/src/watchdog.rs:319 - Watchdog thread idle -> terminating. Have a great day.
+09-10 18:19:25.070  8343  8470 I ServiceManagerCppClient: Waiting for service 'sensorservice' on '/dev/binder'...
+09-10 18:19:25.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52898): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:25.770 11787 11787 I securedpud.slider: starting securedpud
+09-10 18:19:25.770 11787 11787 I securedpud.slider: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:25.770 11787 11787 I DMABUFHEAPS: Using DMA-BUF heap named: tui-secure
+09-10 18:19:25.771 11787 11787 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.secure_dpu" (err=107)
+09-10 18:19:25.771 11787 11787 E securedpud.slider: Failed to connect to: /dev/trusty-ipc-dev0
+09-10 18:19:25.782 11788 11788 I trusty_metricsd: starting trusty_metricsd
+09-10 18:19:25.782 11788 11788 I trusty_metricsd: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:25.784 11788 11788 E libtrusty: tipc_connect: can't connect to tipc service "com.android.frameworks.stats.trusty.metrics.istats_setter" (err=107)
+09-10 18:19:25.784 11788 11788 E RpcTrusty: Failed to connect to Trusty service. Error code: -107
+09-10 18:19:25.784 11788 11788 E RpcTrusty: Failed to set up Trusty client. Error: BAD_VALUE
+09-10 18:19:25.784 11788 11788 E trusty_metricsd: failed to connect TrustyMetricsPixel to Trusty: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:25.784 11788 11788 W RefBase : RefBase: Explicit destruction, weak count = 0 (in 0xb40000794dfc8348). Use sp<> to manage this object.
+09-10 18:19:25.784 11788 11788 W RefBase : CallStack::getCurrentInternal not linked, returning null
+09-10 18:19:25.784 11788 11788 W RefBase : CallStack::logStackInternal not linked
+09-10 18:19:25.784 11788 11788 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:25.784 11788 11788 E trusty_metricsd: trying to connect to Trusty metrics TA at old TIPC port
+09-10 18:19:25.785 11788 11788 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.metrics" (err=107)
+09-10 18:19:25.785 11788 11788 E trusty_metricsd: failed to open TrustyMetricsPixelTipc: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:25.785 11788 11788 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:25.802 11790 11790 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:25.802 11790 11790 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:25.825 11791 11791 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:25.825 11791 11791 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:26.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52899): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:27.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52900): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:28.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52901): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:29.204  1757  3726 W ProcessStats: Tracking association SourceState{236e54b com.google.android.gms.persistent/10167 BFgs #10691} whose proc state 4 is better than process ProcessState{9d4f188 com.google.android.gms/10167 pkg=com.google.android.gms} proc state 14 (39 skipped)
+09-10 18:19:29.217  3564  3564 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+09-10 18:19:29.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52902): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:29.866  2925  2925 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+09-10 18:19:30.082  8343  8470 W ServiceManagerCppClient: Service sensorservice didn't start. Returning NULL
+09-10 18:19:30.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52903): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:30.783 11803 11803 I trusty_metricsd: starting trusty_metricsd
+09-10 18:19:30.784 11803 11803 I trusty_metricsd: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:30.787 11803 11803 E libtrusty: tipc_connect: can't connect to tipc service "com.android.frameworks.stats.trusty.metrics.istats_setter" (err=107)
+09-10 18:19:30.787 11803 11803 E RpcTrusty: Failed to connect to Trusty service. Error code: -107
+09-10 18:19:30.787 11803 11803 E RpcTrusty: Failed to set up Trusty client. Error: BAD_VALUE
+09-10 18:19:30.787 11803 11803 E trusty_metricsd: failed to connect TrustyMetricsPixel to Trusty: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:30.787 11803 11803 W RefBase : RefBase: Explicit destruction, weak count = 0 (in 0xb4000075ac405738). Use sp<> to manage this object.
+09-10 18:19:30.787 11803 11803 W RefBase : CallStack::getCurrentInternal not linked, returning null
+09-10 18:19:30.787 11803 11803 W RefBase : CallStack::logStackInternal not linked
+09-10 18:19:30.787 11803 11803 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:30.787 11803 11803 E trusty_metricsd: trying to connect to Trusty metrics TA at old TIPC port
+09-10 18:19:30.788 11803 11803 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.metrics" (err=107)
+09-10 18:19:30.788 11803 11803 E trusty_metricsd: failed to open TrustyMetricsPixelTipc: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:30.788 11803 11803 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:30.792 11802 11802 I securedpud.slider: starting securedpud
+09-10 18:19:30.792 11802 11802 I securedpud.slider: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:30.793 11802 11802 I DMABUFHEAPS: Using DMA-BUF heap named: tui-secure
+09-10 18:19:30.793 11802 11802 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.secure_dpu" (err=107)
+09-10 18:19:30.793 11802 11802 E securedpud.slider: Failed to connect to: /dev/trusty-ipc-dev0
+09-10 18:19:30.819 11804 11804 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:30.819 11804 11804 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:30.852 11805 11805 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:30.853 11805 11805 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:31.086  8343  8470 I ServiceManagerCppClient: Waiting for service 'sensorservice' on '/dev/binder'...
+09-10 18:19:31.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52904): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:32.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52905): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:33.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52906): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:34.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52907): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:35.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52908): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:35.810 11818 11818 I securedpud.slider: starting securedpud
+09-10 18:19:35.810 11818 11818 I securedpud.slider: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:35.810 11818 11818 I DMABUFHEAPS: Using DMA-BUF heap named: tui-secure
+09-10 18:19:35.811 11818 11818 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.secure_dpu" (err=107)
+09-10 18:19:35.811 11818 11818 E securedpud.slider: Failed to connect to: /dev/trusty-ipc-dev0
+09-10 18:19:35.817 11819 11819 I trusty_metricsd: starting trusty_metricsd
+09-10 18:19:35.817 11819 11819 I trusty_metricsd: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:35.825 11819 11819 E libtrusty: tipc_connect: can't connect to tipc service "com.android.frameworks.stats.trusty.metrics.istats_setter" (err=107)
+09-10 18:19:35.825 11819 11819 E RpcTrusty: Failed to connect to Trusty service. Error code: -107
+09-10 18:19:35.825 11819 11819 E RpcTrusty: Failed to set up Trusty client. Error: BAD_VALUE
+09-10 18:19:35.825 11819 11819 E trusty_metricsd: failed to connect TrustyMetricsPixel to Trusty: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:35.825 11819 11819 W RefBase : RefBase: Explicit destruction, weak count = 0 (in 0xb400007277220a28). Use sp<> to manage this object.
+09-10 18:19:35.825 11819 11819 W RefBase : CallStack::getCurrentInternal not linked, returning null
+09-10 18:19:35.825 11819 11819 W RefBase : CallStack::logStackInternal not linked
+09-10 18:19:35.825 11819 11819 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:35.825 11819 11819 E trusty_metricsd: trying to connect to Trusty metrics TA at old TIPC port
+09-10 18:19:35.826 11819 11819 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.metrics" (err=107)
+09-10 18:19:35.826 11819 11819 E trusty_metricsd: failed to open TrustyMetricsPixelTipc: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:35.826 11819 11819 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:35.850 11820 11820 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:35.850 11820 11820 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:35.874 11821 11821 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:35.874 11821 11821 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:36.096  8343  8470 W ServiceManagerCppClient: Service sensorservice didn't start. Returning NULL
+09-10 18:19:36.439  1813  1815 I pixel-thermal: quiet_therm:32.24 raw data: quiet_therm:32240 
+09-10 18:19:36.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52909): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:37.099  8343  8470 I ServiceManagerCppClient: Waiting for service 'sensorservice' on '/dev/binder'...
+09-10 18:19:37.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52910): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:38.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52911): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:39.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52912): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:40.696  8343  8343 W ProcessMonitor_: type=1400 audit(0.0:52913): avc:  denied  { read } for  name="stat" dev="proc" ino=4026532006 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+09-10 18:19:40.818 11833 11833 I trusty_metricsd: starting trusty_metricsd
+09-10 18:19:40.818 11833 11833 I trusty_metricsd: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:40.818 11832 11832 I securedpud.slider: starting securedpud
+09-10 18:19:40.818 11832 11832 I securedpud.slider: trusty dev: /dev/trusty-ipc-dev0
+09-10 18:19:40.818 11832 11832 I DMABUFHEAPS: Using DMA-BUF heap named: tui-secure
+09-10 18:19:40.819 11832 11832 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.secure_dpu" (err=107)
+09-10 18:19:40.819 11832 11832 E securedpud.slider: Failed to connect to: /dev/trusty-ipc-dev0
+09-10 18:19:40.821 11833 11833 E libtrusty: tipc_connect: can't connect to tipc service "com.android.frameworks.stats.trusty.metrics.istats_setter" (err=107)
+09-10 18:19:40.821 11833 11833 E RpcTrusty: Failed to connect to Trusty service. Error code: -107
+09-10 18:19:40.821 11833 11833 E RpcTrusty: Failed to set up Trusty client. Error: BAD_VALUE
+09-10 18:19:40.821 11833 11833 E trusty_metricsd: failed to connect TrustyMetricsPixel to Trusty: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:40.821 11833 11833 W RefBase : RefBase: Explicit destruction, weak count = 0 (in 0xb4000071c3765138). Use sp<> to manage this object.
+09-10 18:19:40.821 11833 11833 W RefBase : CallStack::getCurrentInternal not linked, returning null
+09-10 18:19:40.821 11833 11833 W RefBase : CallStack::logStackInternal not linked
+09-10 18:19:40.821 11833 11833 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:40.821 11833 11833 E trusty_metricsd: trying to connect to Trusty metrics TA at old TIPC port
+09-10 18:19:40.822 11833 11833 E libtrusty: tipc_connect: can't connect to tipc service "com.android.trusty.metrics" (err=107)
+09-10 18:19:40.822 11833 11833 E trusty_metricsd: failed to open TrustyMetricsPixelTipc: failed to connect to Trusty metrics TA: Transport endpoint is not connected
+09-10 18:19:40.822 11833 11833 E trusty_metricsd: failed to open Trusty metrics client
+09-10 18:19:40.841 11836 11836 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:40.841 11836 11836 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:40.878 11837 11837 I flags_health_check: ServerConfigurableFlagsReset reset_mode value: 1
+09-10 18:19:40.878 11837 11837 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+09-10 18:19:41.191 11840 11840 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+09-10 18:19:41.191 11840 11840 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+09-10 18:19:41.336   950   961 W statsd  : StateTracker not found for state atom 805
+09-10 18:19:41.336   950   961 W statsd  : StateTracker not found for state atom 854
+09-10 18:19:41.339  1757  1757 I OneTimePermissionUserManager: One time session expired for com.zhenxi.hunter (10299).
+09-10 18:19:41.345  1757  2098 D ActivityManager: sync unfroze 2239 com.google.android.permissioncontroller for 6
+09-10 18:19:41.418  2239 31261 V PermissionControllerServiceImpl: Permission grant result requestId=-8221911824375262679 callingUid=10299 callingPackage=com.zhenxi.hunter permission=android.permission.ACCESS_FINE_LOCATION isImplicit=false result=15
+09-10 18:19:41.419  2239 31261 V PermissionControllerServiceImpl: Permission grant result requestId=-8221911824375262679 callingUid=10299 callingPackage=com.zhenxi.hunter permission=android.permission.ACCESS_COARSE_LOCATION isImplicit=false result=15
+09-10 18:19:41.480  1757  2843 W PackageSettings: Skipping PackageSetting{7cf96ea com.google.android.trichromelibrary_787118830/10287} due to missing metadata
+09-10 18:19:41.494  3120  3125 I APatchD : apd::event: [uid_monitor] System packages list changed, sending to tx...
+09-10 18:19:41.502  1757  1861 I ActivityManager: Killing 8341:com.zhenxi.hunter:hunter_server_twin/u0a299 (adj 700): one-time permission revoked
