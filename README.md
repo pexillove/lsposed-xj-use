@@ -197,6 +197,14 @@ app/src/main/cpp/native_hook.cpp
 3. 结果字符串写入 `NativeBridge.nativeReport` 静态字段，由 `HookEntry` 通过
    `XposedBridge.log` 输出。
 
+`xjhook` 摘除 soinfo 后仍保留映射，已安装 Hook 的 replacement 和 trampoline 会继续
+执行。为避免 bionic 的 `[anon:atexit handlers]` 留下指向该未登记映射的回调，
+`xjhook` 自身和预构建 `libdobby.a` 都以 `-fno-c++-static-destructors` 编译，最终
+链接再用 `-nostartfiles` 删除 NDK CRT 自带的 `atexit` / `__cxa_finalize` 包装入口。
+`.init_array` 仍正常执行，因此全局和函数局部静态对象照常初始化；变化仅是进程退出时
+不再自动执行静态析构。普通自动对象仍在离开作用域时析构。当前产物经动态符号表、
+重定位表和反汇编检查，不包含 `atexit`、`__cxa_atexit` 或 `__cxa_finalize`。
+
 提醒：native hook 的安装和 solistClear 自卸载没有编译开关，`JNI_OnLoad` 里无条件
 执行；如需临时禁用某项（例如定位加固应用崩溃），直接注释掉 `native_hook.cpp`
 中 `JNI_OnLoad` 里的对应调用即可。
@@ -273,12 +281,16 @@ app/src/main/cpp/third_party/dobby/lib/arm64-v8a/libdobby.a
 当前静态库 SHA-256：
 
 ```text
-ec80c48006731642d3d0bbd8be15528b72dedfecda6c9c34ee009bf2e5e9c996
+507eba800895034841eea7137682ad51624fbfa63bf54fec1c905d101d324c1c
 ```
 
 该库已启用 `Plugin.SymbolResolver`，可直接调用 `DobbySymbolResolver()`，原有
-DobbyXJ 接口保持可用。符号解析不安装 Hook，也不要求 KPM 授权；解析结果仍取决于
-目标库是否可见、文件是否可读及符号表是否保留。
+DobbyXJ 接口保持可用，并包含 `xjtmpmm` VMA naming：首次
+`DobbyXjHook()` / `DobbyXjInstrument()` 通过 provider 校验后单向开启，对已有
+Dobby arena 补标，并在后续 arena/candidate 创建时命名。符号解析不安装 Hook，也不
+要求 KPM 授权；解析结果仍取决于目标库是否可见、文件是否可读及符号表是否保留。
+Android arm64 上，新普通 arena 与 candidate 还会优先使用高地址 allocator；显式
+near 分配仍保持距离约束并使用 `MAP_FIXED_NOREPLACE` 防止覆盖已有 VMA。
 
 维护者重建静态库时，在 LSPosed-Irena 源码仓库根目录执行以下命令；普通模块开发者
 继续使用随仓库提供的 `.a`，无需额外源码依赖：
@@ -293,7 +305,8 @@ BUILD_DIR="$PWD/.dbg/dobby-symbol-resolver-build"
   -DCMAKE_TOOLCHAIN_FILE="$ANDROID_NDK_HOME/build/cmake/android.toolchain.cmake" \
   -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-27 \
   -DANDROID_STL=c++_static -DCMAKE_BUILD_TYPE=Release \
-  -DPlugin.SymbolResolver=ON
+  -DPlugin.SymbolResolver=ON \
+  -DCMAKE_CXX_FLAGS=-fno-c++-static-destructors
 "$CMAKE" --build "$BUILD_DIR" --target dobby --parallel 6
 "$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip" \
   --strip-debug "$BUILD_DIR/dobby/libdobby.a"
@@ -301,9 +314,14 @@ install -m 644 "$BUILD_DIR/dobby/libdobby.a" \
   tests/lsposed-xj-use/app/src/main/cpp/third_party/dobby/lib/arm64-v8a/libdobby.a
 ```
 
-本次制品使用 Dobby 源码 `bcc4f69651666a39dcbc4bfcce6c02c14b81c9df`、
-NDK 29、API 27、arm64 Release，已去除调试信息。静态符号检查和最小链接检查通过，
-不代表已执行设备运行回归。
+本次制品基于 Dobby 源码 `1873a3a7780aa9f25914e8335df3316a6951bcdd`，使用 NDK 29、
+API 27、arm64 Release 构建并去除调试信息。Dobby 和最终 `xjhook` 都使用
+`-fno-c++-static-destructors`；`xjhook`
+另以 `-nostartfiles` 去掉未使用的 CRT atexit 包装器，最终 ELF 不导入
+`__cxa_atexit`。2026-09-22 已完成 archive 和 APK 重建以及 ELF 检查；该新产物尚未
+执行设备回归。此前 2026-09-14 在 Pixel 6 / Android 14 上验证相同 DobbyXJ
+代码的 `DobbyXjHook(open)` 成功，candidate 与普通 executable arena 分别位于
+`0x7b7d1fe000`、`0x7b7d1ff000`，均显示为 `[anon:xjtmpmm]`。
 
 官方 Xposed API 82 JAR SHA-256：
 

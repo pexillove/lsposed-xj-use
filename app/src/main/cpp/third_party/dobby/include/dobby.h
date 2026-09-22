@@ -6,6 +6,7 @@ extern "C" {
 #endif
 
 #include <stdbool.h>
+#include <stddef.h>
 #include <stdint.h>
 
 void log_set_level(int level);
@@ -155,6 +156,18 @@ int DobbyHook(void *address, dobby_dummy_func_t replace_func, dobby_dummy_func_t
 // xjhide copy-page hooks (Android arm64, xiaojia-hide KPM required)
 bool DobbyXjIsAvailable();
 int DobbyXjHook(void *address, dobby_dummy_func_t replace_func, dobby_dummy_func_t *origin_func);
+// Enable one-way xjtmpmm naming after validating the text-shadow provider.
+bool DobbyXjEnableVmaNaming();
+bool DobbyXjVmaNamingEnabled();
+// Name one mapping without acquiring Dobby's ownership-registry lock.
+bool DobbyXjNameOwnedMapping(void *address, size_t size);
+// Optional bridge for embedders that own anonymous backing mappings.
+void DobbyXjRegisterOwnedMapping(void *address, size_t size);
+void DobbyXjUnregisterOwnedMapping(void *address, size_t size);
+// Allocate/free an owned anonymous mapping with Android arm64 high-address
+// placement preferred after VMA naming has been enabled.
+void *DobbyXjAllocateOwnedMapping(size_t size, int prot);
+bool DobbyXjFreeOwnedMapping(void *address, size_t size);
 
 // dynamic binary instruction instrument
 // [!!! READ ME !!!]

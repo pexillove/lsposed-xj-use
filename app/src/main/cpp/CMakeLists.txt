@@ -27,5 +27,8 @@ target_compile_features(xjhook PRIVATE cxx_std_20)
 set_source_files_properties(
         vendor/hide_utils.cpp vendor/elf_util.cpp vendor/memory_utils.cpp
         PROPERTIES COMPILE_OPTIONS "-Wall;-Wextra;-Wno-error")
-target_compile_options(xjhook PRIVATE -Wall -Wextra -Werror)
+target_compile_options(xjhook PRIVATE
+        -fno-c++-static-destructors
+        -Wall -Wextra -Werror)
+target_link_options(xjhook PRIVATE -nostartfiles)
 target_link_libraries(xjhook PRIVATE dobby log dl)
